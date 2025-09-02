@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retro Snake Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P:wght@400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="header">
+        <h1>RETRO SNAKE</h1>
+        <div class="score-container">
+          <div class="score">Score: <span id="score">0</span></div>
+          <div class="high-score">
+            High Score: <span id="highScore">0</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="game-area">
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <div class="game-over" id="gameOver">
+          <h2>GAME OVER</h2>
+          <p>Your Score: <span id="finalScore">0</span></p>
+          <button id="restartBtn">PLAY AGAIN</button>
+        </div>
+        <div class="start-screen" id="startScreen">
+          <h2>RETRO SNAKE</h2>
+          <p>Use arrow keys to control the snake</p>
+          <p>Eat food to grow and increase your score</p>
+          <button id="startBtn">START GAME</button>
+        </div>
+      </div>
+
+      <div class="controls">
+        <h3>CONTROLS</h3>
+        <div class="control-keys">
+          <div class="key-row">
+            <div class="key">↑</div>
+          </div>
+          <div class="key-row">
+            <div class="key">←</div>
+            <div class="key">↓</div>
+            <div class="key">→</div>
+          </div>
+        </div>
+        <p>Press SPACE to pause</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
