@@ -51,3 +51,59 @@ Works in all modern browsers that support:
 - ES6 classes
 
 Enjoy the game! 🐍
+
+---
+
+# Juego de Snake Retro
+
+Un hermoso juego de Snake estilo retro construido con HTML5 Canvas y JavaScript.
+
+## Características
+
+- 🎮 Jugabilidad clásica de Snake con mejoras modernas
+- 🎨 Hermosa interfaz retro con colores neón (¡sin morado!)
+- 🔊 Efectos de sonido usando Web Audio API
+- 📱 Diseño responsivo que funciona en móviles
+- 💾 Persistencia de puntuación alta usando localStorage
+- ⏸️ Funcionalidad de pausa (presiona ESPACIO)
+- ✨ Efectos visuales incluyendo elementos brillantes y líneas de escaneo
+- 🎯 Dificultad progresiva (el juego se acelera mientras obtienes puntos)
+
+## Cómo Jugar
+
+1. Abre `index.html` en tu navegador web
+2. Haz clic en "START GAME" para comenzar
+3. Usa las teclas de flecha para controlar la serpiente:
+   - ↑ Flecha Arriba
+   - ↓ Flecha Abajo
+   - ← Flecha Izquierda
+   - → Flecha Derecha
+4. Presiona ESPACIO para pausar/reanudar
+5. Come la comida roja para crecer e incrementar tu puntuación
+6. ¡Evita chocar con las paredes o tu propio cuerpo!
+
+## Esquema de Colores
+
+- Fondo: Gradiente azul oscuro
+- Serpiente: Verde brillante con efecto de brillo
+- Comida: Rojo brillante con animación pulsante
+- Elementos de UI: Colores neón verde, amarillo y rojo
+- ¡No se usan colores morados como se solicitó!
+
+## Archivos
+
+- `index.html` - Página principal del juego
+- `styles.css` - Estilos retro y animaciones
+- `script.js` - Lógica y mecánicas del juego
+- `README.md` - Este archivo
+
+## Compatibilidad de Navegadores
+
+Funciona en todos los navegadores modernos que soporten:
+
+- HTML5 Canvas
+- Animaciones CSS3
+- Web Audio API
+- Clases ES6
+
+¡Disfruta el juego! 🐍
