@@ -172,19 +172,19 @@ class SnakeGame {
     this.ctx.fillRect(0, 0, this.canvas.width, this.canvas.height);
 
     // Draw snake
-    this.ctx.fillStyle = "#ffff00";
+    this.ctx.fillStyle = "#00ff00";
     this.ctx.shadowBlur = 10;
-    this.ctx.shadowColor = "#ffff00";
+    this.ctx.shadowColor = "#00ff00";
 
     for (let i = 0; i < this.snake.length; i++) {
       const segment = this.snake[i];
 
       // Head is brighter
       if (i === 0) {
-        this.ctx.fillStyle = "#ffff00";
+        this.ctx.fillStyle = "#00ff00";
         this.ctx.shadowBlur = 15;
       } else {
-        this.ctx.fillStyle = "#cccc00";
+        this.ctx.fillStyle = "#00cc00";
         this.ctx.shadowBlur = 5;
       }
 
@@ -197,8 +197,8 @@ class SnakeGame {
     }
 
     // Draw food
-    this.ctx.fillStyle = "#ffff00";
-    this.ctx.shadowColor = "#ffff00";
+    this.ctx.fillStyle = "#00ff00";
+    this.ctx.shadowColor = "#00ff00";
     this.ctx.shadowBlur = 15;
 
     // Animated food (pulsing effect)
@@ -214,7 +214,7 @@ class SnakeGame {
     this.ctx.shadowBlur = 0;
 
     // Draw grid (subtle)
-    this.ctx.strokeStyle = "rgba(255, 255, 0, 0.1)";
+    this.ctx.strokeStyle = "rgba(0, 255, 0, 0.1)";
     this.ctx.lineWidth = 1;
 
     for (let i = 0; i <= this.tileCount; i++) {
@@ -231,7 +231,7 @@ class SnakeGame {
 
     // Draw pause indicator
     if (this.gamePaused) {
-      this.ctx.fillStyle = "rgba(255, 255, 204, 0.8)";
+      this.ctx.fillStyle = "rgba(204, 255, 204, 0.8)";
       this.ctx.font = '20px "Press Start 2P"';
       this.ctx.textAlign = "center";
       this.ctx.fillText(

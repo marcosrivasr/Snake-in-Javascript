@@ -6,7 +6,7 @@
 
 body {
   background: linear-gradient(135deg, #0f0f23, #1a1a3e);
-  color: #ffff00;
+  color: #00ff00;
   font-family: "Press Start 2P", cursive;
   display: flex;
   justify-content: center;
@@ -17,10 +17,10 @@ body {
 
 .game-container {
   background: #000;
-  border: 4px solid #ffff00;
+  border: 4px solid #00ff00;
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 0 20px #ffff00, inset 0 0 20px rgba(255, 255, 0, 0.1);
+  box-shadow: 0 0 20px #00ff00, inset 0 0 20px rgba(0, 255, 0, 0.1);
   max-width: 600px;
   position: relative;
 }
@@ -31,19 +31,19 @@ body {
 }
 
 .header h1 {
-  color: #ffff00;
+  color: #00ff00;
   font-size: 24px;
-  text-shadow: 0 0 10px #ffff00;
+  text-shadow: 0 0 10px #00ff00;
   margin-bottom: 15px;
   animation: glow 2s ease-in-out infinite alternate;
 }
 
 @keyframes glow {
   from {
-    text-shadow: 0 0 10px #ffff00;
+    text-shadow: 0 0 10px #00ff00;
   }
   to {
-    text-shadow: 0 0 20px #ffff00, 0 0 30px #ffff00;
+    text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00;
   }
 }
 
@@ -51,7 +51,7 @@ body {
   display: flex;
   justify-content: space-between;
   font-size: 10px;
-  color: #ffffcc;
+  color: #ccffcc;
 }
 
 .game-area {
@@ -63,8 +63,8 @@ body {
 
 #gameCanvas {
   background: #111;
-  border: 2px solid #ffff00;
-  box-shadow: inset 0 0 20px rgba(255, 255, 0, 0.2);
+  border: 2px solid #00ff00;
+  box-shadow: inset 0 0 20px rgba(0, 255, 0, 0.2);
 }
 
 .game-over,
@@ -80,7 +80,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border: 2px solid #ffff00;
+  border: 2px solid #00ff00;
 }
 
 .game-over.hidden,
@@ -90,28 +90,28 @@ body {
 
 .game-over h2,
 .start-screen h2 {
-  color: #ffff00;
+  color: #00ff00;
   font-size: 20px;
   margin-bottom: 20px;
-  text-shadow: 0 0 10px #ffff00;
+  text-shadow: 0 0 10px #00ff00;
 }
 
 .start-screen h2 {
-  color: #ffff00;
-  text-shadow: 0 0 10px #ffff00;
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00;
 }
 
 .game-over p,
 .start-screen p {
-  color: #ffffcc;
+  color: #ccffcc;
   font-size: 8px;
   margin-bottom: 10px;
   line-height: 1.5;
 }
 
 button {
-  background: linear-gradient(45deg, #ffff00, #cccc00);
-  border: 2px solid #ffff00;
+  background: linear-gradient(45deg, #00ff00, #00cc00);
+  border: 2px solid #00ff00;
   color: #000;
   font-family: "Press Start 2P", cursive;
   font-size: 10px;
@@ -119,13 +119,13 @@ button {
   cursor: pointer;
   border-radius: 5px;
   text-shadow: none;
-  box-shadow: 0 0 10px #ffff00;
+  box-shadow: 0 0 10px #00ff00;
   transition: all 0.3s ease;
 }
 
 button:hover {
-  background: linear-gradient(45deg, #cccc00, #aaaa00);
-  box-shadow: 0 0 20px #ffff00;
+  background: linear-gradient(45deg, #00cc00, #00aa00);
+  box-shadow: 0 0 20px #00ff00;
   transform: translateY(-2px);
 }
 
@@ -138,10 +138,10 @@ button:active {
 }
 
 .controls h3 {
-  color: #ffffcc;
+  color: #ccffcc;
   font-size: 12px;
   margin-bottom: 15px;
-  text-shadow: 0 0 5px #ffffcc;
+  text-shadow: 0 0 5px #ccffcc;
 }
 
 .control-keys {
@@ -157,8 +157,8 @@ button:active {
 
 .key {
   background: linear-gradient(45deg, #333, #555);
-  border: 2px solid #ffff00;
-  color: #ffff00;
+  border: 2px solid #00ff00;
+  color: #00ff00;
   width: 40px;
   height: 40px;
   display: flex;
@@ -167,11 +167,11 @@ button:active {
   font-size: 16px;
   font-weight: bold;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(255, 255, 0, 0.5);
+  box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
 }
 
 .controls p {
-  color: #ffffcc;
+  color: #ccffcc;
   font-size: 8px;
 }
 
@@ -218,8 +218,8 @@ button:active {
     0deg,
     transparent,
     transparent 2px,
-    rgba(255, 255, 0, 0.03) 2px,
-    rgba(255, 255, 0, 0.03) 4px
+    rgba(0, 255, 0, 0.03) 2px,
+    rgba(0, 255, 0, 0.03) 4px
   );
   pointer-events: none;
   border-radius: 10px;
